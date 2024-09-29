@@ -1,112 +1,32 @@
 <!DOCTYPE html>
-<html>
+<!-- start of daisyUI theme -->
+<html lang="en" data-theme="light">
+  <!-- end of daisyUI theme  -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN of Flowbite -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- end CDN of Flowbite -->
+
+    <!-- CDN of daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- end CDN of daisyUI -->
     <link href="./output.css" rel="stylesheet" />
+
     <title>Coffee Shop</title>
   </head>
   <body>
     <!-- Start of Navbar -->
-
-    <!-- <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
-      >
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Flowbite</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
-                >Welcome</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >We Offer</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Our Shop</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Special</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Chef Team</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Get In Touch</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
 
     <nav
       x-data="{ isOpen: false }"
@@ -349,10 +269,15 @@
 
     <!-- End of We Offer Quotes   -->
 
+    <!-- for the blog content -->
+
+    <!-- end of blog content -->
+
+    <!-- End of We Offer Quotes   -->
+
     <!-- End of We Offer Content  -->
 
-    <!-- Start of Gallery-->
-
+    <!-- Start of Gallery by Flowbite -->
     <div class="flex flex-wrap items-center justify-center py-4 md:py-8">
       <button
         type="button"
@@ -385,94 +310,361 @@
         Gaming
       </button>
     </div>
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
-          alt=""
-        />
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-          alt=""
-        />
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
-          alt=""
-        />
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          class="h-auto max-w-full rounded-lg"
-          src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
-          alt=""
-        />
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
+    <!-- End of Gallery by Flowbite-->
 
-    <!-- End of Gallery-->
+    <!-- Start of Get In Touch ( Footer ) -->
+
+    <!-- Start of Footer by MerakiUi -->
+    <footer class="mt-5 bg-white dark:bg-gray-900">
+      <div class="container px-6 py-12 mx-auto">
+        <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+          <h1
+            class="text-xl font-semibold tracking-tight text-gray-800 md:mx-3 xl:text-2xl dark:text-white"
+          >
+            Subscribe our newsletter to get update.
+          </h1>
+
+          <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center w-full px-4 py-2 text-sm text-white duration-300 bg-gray-800 rounded-lg gap-x-3 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+            >
+              <span>Sign Up Now</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <div>
+            <p class="font-semibold text-gray-800 dark:text-white">
+              Quick Link
+            </p>
+
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Who We Are</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Our Philosophy</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800 dark:text-white">
+              Industries
+            </p>
+
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Retail & E-Commerce</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Information Technology</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Finance & Insurance</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800 dark:text-white">Services</p>
+
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Translation</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Proofreading & Editing</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >Content Creation</a
+              >
+            </div>
+          </div>
+
+          <div>
+            <p class="font-semibold text-gray-800 dark:text-white">
+              Contact Us
+            </p>
+
+            <div class="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >+880 768 473 4978</a
+              >
+              <a
+                href="#"
+                class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+                >info@merakiui.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End of Footer by MerakiUi -->
+
+    <!-- Start of Footer by DaisyUI -->
+
+    <footer
+      class="p-10 rounded footer footer-center bg-base-200 text-base-content"
+    >
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <button class="btn btn-accent btn-outline">
+            <a>
+              <!-- Start of Instagram SVG flowbite -->
+              <svg
+                class="w-[31px] h-[31px] text-gray-900 text-neutral-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <!-- End of Instagram SVG flowbite -->
+            </a>
+          </button>
+          <button class="btn btn-accent btn-outline">
+            <a>
+              <!-- Start of Youtube SVG flowbite -->
+              <svg
+                class="w-[31px] h-[31px] text-gray-900 text-neutral-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <!-- End of Youtube SVG flowbite -->
+            </a>
+          </button>
+          <button class="btn btn-accent btn-outline">
+            <a>
+              <!-- Start of Facebook SVG flowbite -->
+              <svg
+                class="w-[31px] h-[31px] text-gray-900 text-neutral-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <!-- End of Facebook SVG flowbite -->
+            </a>
+          </button>
+          <button class="btn btn-accent btn-outline">
+            <a>
+              <!-- Start of Twitter SVG flowbite -->
+              <svg
+                class="w-[31px] h-[31px] text-gray-900 text-neutral-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                />
+              </svg>
+
+              <!-- End of Twitter SVG flowbite -->
+            </a>
+          </button>
+          <button class="btn btn-accent btn-outline">
+            <a>
+              <!-- Start of Google SVG flowbite -->
+              <svg
+                class="w-[31px] h-[31px] text-gray-900 text-neutral-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <!-- End of Google SVG flowbite -->
+            </a>
+          </button>
+        </div>
+      </nav>
+      <aside>
+        <p>Copyright © 2024 - All right reserved by Coffee Shop</p>
+      </aside>
+    </footer>
+    <!-- End of Footer by DaisyUI -->
+
+    <!-- End of Get In Touch ( Footer ) -->
 
     <!-- CDN of Flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
@@ -491,5 +683,9 @@
       <span x-show="open"> Content... </span>
     </div> -->
     <!-- End of Alpine JS script link by merakiui -->
+
+    <!-- Start of daisyUI script-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- End of daisyUI script -->
   </body>
 </html>

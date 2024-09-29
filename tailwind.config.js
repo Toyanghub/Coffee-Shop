@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}"], // Files to scan for Tailwind CSS classes
   theme: {
     colors: {
       transparent: "transparent",
@@ -16,8 +16,22 @@ module.exports = {
       emerald: "#10b981",
       indigo: "#4f46e5",
     },
-
-    extend: {},
+    extend: {}, // Option to extend default theme
   },
-  plugins: ["flowbite/plugin"],
+  daisyui: {
+    themes: [
+      "light", // Default light theme
+      "dark", // Dark mode
+      "cupcake", // Cupcake theme
+      "cyberpunk", // Cyberpunk theme
+      "lofi", // Minimalist "lofi" theme
+      "coffee", // Warm coffee theme
+      "retro", // Retro-inspired theme
+      "valentine", // Valentine-themed style
+    ],
+  },
+  plugins: [
+    require("daisyui"), // DaisyUI plugin
+    require("@tailwindcss/typography"), // Tailwind Typography plugin
+  ],
 };
